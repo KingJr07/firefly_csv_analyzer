@@ -1,0 +1,358 @@
+{
+  "summary": {
+    "dataset_size": "1,000 rows \u00d7 12 columns",
+    "memory_usage": "0.09 MB",
+    "missing_data_summary": {},
+    "data_types_summary": {
+      "numeric": 12,
+      "categorical": 0,
+      "datetime": 12
+    }
+  },
+  "features": [
+    {
+      "name": "v.id",
+      "type": "int64",
+      "importance": 0.1354881764980894,
+      "missing_pct": 0.0,
+      "unique_values": 1000,
+      "mean": 500.5,
+      "std": 288.8194360957494,
+      "min": 1.0,
+      "max": 1000.0,
+      "skewness": 0.0
+    },
+    {
+      "name": "on road old",
+      "type": "int64",
+      "importance": 0.16743338225292465,
+      "missing_pct": 0.0,
+      "unique_values": 998,
+      "mean": 601648.286,
+      "std": 58407.246203662944,
+      "min": 500265.0,
+      "max": 699859.0,
+      "skewness": -0.06086849054026194
+    },
+    {
+      "name": "on road now",
+      "type": "int64",
+      "importance": 0.17677281416909438,
+      "missing_pct": 0.0,
+      "unique_values": 998,
+      "mean": 799131.397,
+      "std": 57028.95020003708,
+      "min": 700018.0,
+      "max": 899797.0,
+      "skewness": 0.0032960415036808023
+    },
+    {
+      "name": "years",
+      "type": "int64",
+      "importance": 0.1780414500709293,
+      "missing_pct": 0.0,
+      "unique_values": 6,
+      "mean": 4.561,
+      "std": 1.7190794729256216,
+      "min": 2.0,
+      "max": 7.0,
+      "skewness": -0.029662882682431387
+    },
+    {
+      "name": "km",
+      "type": "int64",
+      "importance": 0.2388226393322941,
+      "missing_pct": 0.0,
+      "unique_values": 997,
+      "mean": 100274.43,
+      "std": 29150.463233125574,
+      "min": 50324.0,
+      "max": 149902.0,
+      "skewness": -0.022623700768306897
+    },
+    {
+      "name": "rating",
+      "type": "int64",
+      "importance": 0.23032580436653105,
+      "missing_pct": 0.0,
+      "unique_values": 5,
+      "mean": 2.988,
+      "std": 1.4027914398882764,
+      "min": 1.0,
+      "max": 5.0,
+      "skewness": -0.004806190435587735
+    },
+    {
+      "name": "condition",
+      "type": "int64",
+      "importance": 0.3023714472590105,
+      "missing_pct": 0.0,
+      "unique_values": 10,
+      "mean": 5.592,
+      "std": 2.824449240739425,
+      "min": 1.0,
+      "max": 10.0,
+      "skewness": -0.0603338051348167
+    },
+    {
+      "name": "economy",
+      "type": "int64",
+      "importance": 0.17859791342325038,
+      "missing_pct": 0.0,
+      "unique_values": 8,
+      "mean": 11.625,
+      "std": 2.2305493382461528,
+      "min": 8.0,
+      "max": 15.0,
+      "skewness": -0.06169227360080022
+    },
+    {
+      "name": "top speed",
+      "type": "int64",
+      "importance": 0.31118176550936544,
+      "missing_pct": 0.0,
+      "unique_values": 66,
+      "mean": 166.893,
+      "std": 19.28837972958311,
+      "min": 135.0,
+      "max": 200.0,
+      "skewness": 0.06453531562951059
+    },
+    {
+      "name": "hp",
+      "type": "int64",
+      "importance": 0.41385975698669086,
+      "missing_pct": 0.0,
+      "unique_values": 71,
+      "mean": 84.546,
+      "std": 20.516940045455826,
+      "min": 50.0,
+      "max": 120.0,
+      "skewness": 0.02348465013415224
+    },
+    {
+      "name": "torque",
+      "type": "int64",
+      "importance": 0.1,
+      "missing_pct": 0.0,
+      "unique_values": 73,
+      "mean": 103.423,
+      "std": 21.05871649793834,
+      "min": 68.0,
+      "max": 140.0,
+      "skewness": -0.0056747214162777065
+    },
+    {
+      "name": "current price",
+      "type": "float64",
+      "importance": 0.45515905037272186,
+      "missing_pct": 0.0,
+      "unique_values": 1000,
+      "mean": 308520.2425,
+      "std": 126073.25914983758,
+      "min": 28226.5,
+      "max": 584267.5,
+      "skewness": 0.025160827412438184
+    }
+  ],
+  "patterns": [
+    {
+      "type": "temporal",
+      "feature": "v.id",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "on road old",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "on road now",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "years",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "km",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "rating",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "condition",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "economy",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "top speed",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "hp",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "torque",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "temporal",
+      "feature": "current price",
+      "daily_pattern": {
+        "0": 1000
+      },
+      "weekly_pattern": {
+        "3": 1000
+      },
+      "monthly_pattern": {
+        "1": 1000
+      }
+    },
+    {
+      "type": "correlation",
+      "correlations": [
+        {
+          "features": [
+            "km",
+            "current price"
+          ],
+          "correlation": -0.9359242041160892
+        }
+      ]
+    }
+  ],
+  "anomalies": [],
+  "recommendations": [
+    {
+      "type": "feature_selection",
+      "issue": "low_importance_features",
+      "features": [
+        "v.id",
+        "on road old",
+        "on road now",
+        "years",
+        "economy",
+        "torque"
+      ],
+      "suggestion": "Consider removing or combining these low-importance features to simplify the model."
+    },
+    {
+      "type": "correlation",
+      "issue": "high_correlation",
+      "details": [
+        {
+          "features": [
+            "km",
+            "current price"
+          ],
+          "correlation": -0.9359242041160892
+        }
+      ],
+      "suggestion": "Consider feature selection or dimensionality reduction for highly correlated features."
+    }
+  ]
+}
